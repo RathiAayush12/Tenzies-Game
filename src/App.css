@@ -1,0 +1,184 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108, 148, 205);
+  height: 100vh;
+
+}
+
+.main-container{
+    background-color: rgb(232, 221, 221);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.heading{
+    font-size: 2rem;
+    color: rgb(66, 93, 228);
+    margin-bottom: 10px;
+}
+
+.intro{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.input{
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(82, 77, 77);
+    margin-bottom: 10px;
+}
+
+.startbtn{
+    background-color: rgba(44, 85, 230, 0.867);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1rem;
+    color: white;
+}
+
+.startbtn:hover{
+    background-color: rgb(18, 30, 204);
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.playername{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.backbtn{
+    background-color: rgba(44, 85, 230, 0.867);
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.backbtn:hover{
+    background-color: rgb(18, 30, 204);
+}
+
+.win-container{
+    background-color: rgb(86, 1, 243);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.win-heading{
+    color: white;
+}
+
+.win-text{
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.rollcounter-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.rollcount{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Roll-number{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.die-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px;
+    margin-bottom: 15px;
+}
+
+.die{
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(206, 206, 206);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.die.is-held{
+    background-color: rgb(38, 215, 38);
+}
+
+.newGamebtn,.rolldice{
+    background-color: blue;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.instructions{
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+@media screen  and (max-width : 600px){
+    .main-container{
+        padding: 10px;
+        margin: 10px;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .input{
+        width: 85%;
+        padding: 12px;
+    }
+    .rollcount{
+        font-size: 1.2rem;
+    }
+    .die-box{
+        grid-template-columns: repeat(5,1fr);
+        gap: 6px;
+    }
+    .die{
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .die-box{
+        grid-template-columns: repeat(5,1fr);
+        gap: 4px;
+    }
+    .die{
+        padding: 6px;
+
+    }
+}
